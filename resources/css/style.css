@@ -39,6 +39,16 @@ li:hover {
     text-shadow: 2px 2px 5px #000000;
 }
 
+#profile {
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#profile:active, li:active{
+    transform: scale(0.95) translate(5%, 5%);
+}
+
 #new-game {
     background-image: URL(../images/tic-tac-toe-background.jpg);
     background-repeat: no-repeat;
@@ -75,7 +85,13 @@ button {
 }
 
 button:hover {
-    transition-duration: 2s;
+    cursor: pointer;
+    transition-duration: 1.7s;
     transition-property: background-color;
     background-color: #456DFF;
+}
+
+button:active {
+    box-shadow: 1px 1px 0px black;
+    transform: scale(0.95) translate(5%, 5%);
 }

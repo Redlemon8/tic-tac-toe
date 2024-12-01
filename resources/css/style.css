@@ -36,17 +36,25 @@ li {
 }
 
 li:hover {
+    cursor: pointer;
     text-shadow: 2px 2px 5px #000000;
 }
 
+li:active {
+    transform: scale(0.95) translate(5%, 5%);
+    text-shadow: -1px -1px 0px black;
+}
+
 #profile {
+    border-radius: 0px;
     -moz-border-radius:75px;
     -webkit-border-radius: 75px;
     box-shadow: 2px 2px 5px black;
 }
 
-#profile:active, li:active{
+#profile:active {
     transform: scale(0.95) translate(5%, 5%);
+    box-shadow: -0.5px -0.5px 0px black;
 }
 
 #new-game {
